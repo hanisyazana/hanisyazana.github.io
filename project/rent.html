@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Nav Bar -->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="rent.html">Rent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="booking_list.html">List of rent car</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <!--contoh-->
+        <div class="container">
+            <main>
+              <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="https://repository-images.githubusercontent.com/343132039/9d6a4a00-79f1-11eb-9262-8d3f8dd0ec99" alt="" width="300" height="150">
+                <h2>Rental form</h2>
+                <p class="lead"> We’re working with our partners to keep you safe and in the driving seat.</p>
+              </div>
+          
+              <div class="row g-5">
+                <div class="col-md-7 col-lg-8">
+                  <h4 class="mb-3">Rental Information</h4>
+                  <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          phone number is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                          Please enter a valid email address for shipping updates.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                          Please enter your shipping address.
+                        </div>
+                      </div>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <h4 class="mb-3">Payment</h4>
+          
+                    <div class="my-3">
+                      <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                        <label class="form-check-label" for="credit">Credit card</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="debit">Debit card</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="paypal">PayPal</label>
+                      </div>
+                    </div>
+          
+                    <div class="row gy-3">
+                      <div class="col-md-6">
+                        <label for="cc-name" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <small class="text-muted">Full name as displayed on card</small>
+                        <div class="invalid-feedback">
+                          Name on card is required
+                        </div>
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Credit card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Credit card number is required
+                        </div>
+                      </div>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <button class="w-100 btn btn-primary btn-lg" type="submit" id="booking">Continue to Booking</button>
+                  </form>
+                </div>
+              </div>
+            </main>
+          
+            <footer class="my-5 pt-5 text-muted text-center text-small">
+              <p class="mb-1">&copy; 2017–2021 Carental</p>
+            </footer>
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/rent.js"></script>
+</body>
+
+</html>
