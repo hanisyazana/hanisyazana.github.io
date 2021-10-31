@@ -1,4 +1,4 @@
-function show(){
+function calcFactorial(){
 
     var i, no, fact;
     fact=1;
